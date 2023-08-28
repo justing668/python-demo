@@ -9,7 +9,7 @@ jobs:
       - name: clone repository
         run: |
           git clone https://oauth2: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@github.com/justing668/python-demo.git
-          cd github-actions-python
+          cd python-demo
       - name: install pytest
         run: pip install pytest
       - name: run pytest
