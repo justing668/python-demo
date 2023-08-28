@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: clone repository
         run: |
-          git clone https://github.com/xiaopeng163/github-actions-python
+          git clone https://github.com/justing668/python-demo.git
           cd github-actions-python
       - name: install pytest
         run: pip install pytest
