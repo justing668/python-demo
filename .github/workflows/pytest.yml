@@ -13,8 +13,6 @@ jobs:
           echo ${{ github.repositoryUrl }}
       - name: checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ github.token }}
       - name: after checkout
         run: |
           pwd
