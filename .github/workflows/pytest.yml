@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        run: |
-          git clone https://oauth2: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@github.com/justing668/python-demo.git
-          cd python-demo
+        uses: actions/checkout@v3
+        with:
+          token: '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'
       - name: install pytest
         run: pip install pytest
       - name: run pytest
