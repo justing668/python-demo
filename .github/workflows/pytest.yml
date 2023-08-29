@@ -9,7 +9,7 @@ jobs:
       - name: clone repository
         uses: actions/checkout@v3
         with:
-          token: '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'
+          token: ${{ github.token }}
       - name: install pytest
         run: pip install pytest
       - name: run pytest
