@@ -6,21 +6,6 @@ jobs:
   pytest:
     runs-on: ubuntu-latest
     steps:
-      - name: github action context
-        run: echo ${{ github.repositoryUrl }}
       - name: pre checkout
-        run: |
-          pwd
-          ls -lh
-          git clone https://github.com/justing668/python-demo.git
-      - name: checkout code
-        uses: actions/checkout@v3
-      - name: after checkout
-        run: |
-          pwd
-          ls -lh
-          git clone https://github.com/justing668/python-demo.git
-      - name: install pytest
-        run: pip install pytest
-      - name: run pytest
-        run: pytest
+        run: git clone https://github.com/justing668/python-demo.git
+
